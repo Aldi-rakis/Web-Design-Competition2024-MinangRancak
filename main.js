@@ -4,10 +4,6 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
-document.getElementById("explore-btn").addEventListener("click", function() {
-  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-});
-
 // header container
 ScrollReveal().reveal(".header__container h1", scrollRevealOption);
 
@@ -38,6 +34,26 @@ ScrollReveal().reveal(".about__container .btn", {
   delay: 1500,
 });
 
+
+// stories container
+ScrollReveal().reveal(".stories_container", scrollRevealOption);
+ScrollReveal().reveal(".stories-text", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+
+
+ScrollReveal().reveal(".tarian", {
+  duration: 1000,
+  interval: 400,
+});
+
+ScrollReveal().reveal(".Musik", {
+  duration: 1000,
+  interval: 200,
+});
+
+
 // discover container
 ScrollReveal().reveal(".discover__card", {
   ...scrollRevealOption,
@@ -56,6 +72,13 @@ ScrollReveal().reveal(".blogs__card", {
   interval: 400,
 });
 
+ScrollReveal().reveal(".post-box", {
+  ...scrollRevealOption,
+  interval: 200,
+});
+
+
+
 // journals container
 ScrollReveal().reveal(".journals__card", {
   ...scrollRevealOption,
@@ -63,8 +86,20 @@ ScrollReveal().reveal(".journals__card", {
 });
 
 
+// blog detail section
+ScrollReveal().reveal(".post-header", {
+  ...scrollRevealOption,
+  interval: 400,
+});
 
 
+
+ScrollReveal().reveal(".post-text", {
+  ...scrollRevealOption,
+  interval: 400,
+});
+
+ScrollReveal().reveal(".footer__bar h1 img", scrollRevealOption);
 
 
 //Filter
